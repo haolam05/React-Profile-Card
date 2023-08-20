@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+#![1](https://github.com/haolam05/React-Profile-Card/assets/71291057/d7633a17-5ce9-4270-b4e9-5632f2f4089d)
+
+
+ Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
