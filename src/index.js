@@ -2,6 +2,42 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
+const advanced = "💪";
+const intermediate = "👌";
+const beginner = "🫴";
+const skills = [
+  {
+    skill: "HTML+CSS",
+    level: "intermediate",
+    color: "#2662EA",
+  },
+  {
+    skill: "JavaScript",
+    level: "advanced",
+    color: "#EFD81D",
+  },
+  {
+    skill: "Web Design",
+    level: "advanced",
+    color: "#C3DCAF",
+  },
+  {
+    skill: "Git and GitHub",
+    level: "intermediate",
+    color: "#E84F33",
+  },
+  {
+    skill: "React",
+    level: "beginner",
+    color: "#60DAFB",
+  },
+  {
+    skill: "Node",
+    level: "intermediate",
+    color: "#FF3B00",
+  },
+];
+
 function Avatar(props) {
   return <img className="avatar" src={props.path} alt={props.name} />;
 }
@@ -45,7 +81,7 @@ function App() {
           name="Hao Tuong Lam"
           introduction="Full-stack web developer and Embedded engineer. When I am free, I like working out, reading, playing billiards and hanging out with my brothers."
         />
-        <SkillList
+        {/* <SkillList
           skills={[
             { skill: "HTML", color: "red", emoji: "💪" },
             { skill: "CSS", color: "yellow", emoji: "🫵" },
@@ -65,6 +101,20 @@ function App() {
             { skill: "FPGA", color: "violet", emoji: "🫶" },
             { skill: "Trilingual", color: "aquamarine", emoji: "🤲" },
           ]}
+        /> */}
+        <SkillList
+          skills={skills.map((skill) => {
+            return {
+              skill: skill.skill,
+              color: skill.color,
+              emoji:
+                skill.level === "advanced"
+                  ? advanced
+                  : skill.level === "intermediate"
+                  ? intermediate
+                  : beginner,
+            };
+          })}
         />
       </div>
     </div>
