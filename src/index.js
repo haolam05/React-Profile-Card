@@ -43,7 +43,7 @@ function App() {
       <div className="data">
         <Intro
           name="Hao Tuong Lam"
-          introduction="Full-stack web developer and Embedded engineer. When I am free, I like to working out, reading, playing billiards and hanging out with my brothers."
+          introduction="Full-stack web developer and Embedded engineer. When I am free, I like working out, reading, playing billiards and hanging out with my brothers."
         />
         <SkillList
           skills={[
