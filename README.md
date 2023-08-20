@@ -1,4 +1,4 @@
-#![1](https://github.com/haolam05/React-Profile-Card/assets/71291057/d7633a17-5ce9-4270-b4e9-5632f2f4089d)
+![1 (2)](https://github.com/haolam05/React-Profile-Card/assets/71291057/459b3d4b-163c-4df8-92ed-1a8a064be183)
 
 
  Getting Started with Create React App
